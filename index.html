@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicholas Seamans Full Stack Web Developer.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css" />      
+        <link href="css/hover.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Domine|Noto+Sans|Quicksand|Rouge+Script" rel="stylesheet">
+        
+        <script src="js/bootstrap.min.js"></script>    
+        <script src="js/jquery-3.3.1.min.js"></script>
+        
+        <!--  Jquery -->
+        <script>          
+                $(document).ready(
+                        function(){
+
+                                $("#about-panel").hide();
+                                $("#education-panel").hide();
+                                $("#technical-panel").hide();
+                                //$("#contact-panel").hide();
+                                //$("#Information").hide();
+                                $("#Resume").hide();
+                                $("#Portfolio").hide();
+                                //$("#InformationC").css("background-color", "black");
+
+                                 $("#Introduction").hide();
+
+                                $( "#ResumeC" ).click(function() {
+                                        $("#Information").fadeOut();
+                                        $("#Portfolio").fadeOut();
+                                        $("#Resume").fadeIn();
+                                });
+                                
+                                $( "#InformationC" ).click(function() {
+                                        $("#about-panel").hide();
+                                        $("#education-panel").hide();
+                                        $("#technical-panel").hide();
+                                        
+                                        $("#Resume").fadeOut();
+                                        $("#Portfolio").fadeOut();
+                                        $("#Information").fadeIn();
+                                });
+                                
+                                $( "#PortfolioC" ).click(function() {
+                                        $("#about-panel").hide();
+                                        $("#education-panel").hide();
+                                        $("#technical-panel").hide();
+                                    
+                                        $("#Resume").fadeOut();
+                                        $("#Information").fadeOut();
+                                        $("#Portfolio").fadeIn();
+                                });
+
+
+                                var isTouchDevice = ('ontouchstart' in window || 'onmsgesturechange' in window);
+
+                                if(!isTouchDevice){
+
+                                        $("#aboutl").hover(
+
+                                                function(){
+                                                        //$("#about-panel").show();
+                                                        $("#about-panel").fadeIn("slow");
+                                                        $("#education-panel").hide();
+                                                        $("#technical-panel").hide();
+                                                        $("#aboutl").css("background-color", "white");
+                                                        $("#aboutl").css("color", "#D86C6F");
+                                                }, 
+                                                function(){
+                                                        $("#about-panel").hide();
+                                                        $("#aboutl").css("background-color", "#D86C6F");
+                                                        $("#aboutl").css("color", "white");
+
+                                        });      
+
+                                        $("#educationl").hover(
+
+                                                function(){
+                                                        $("#education-panel").fadeIn("slow");
+                                                        $("#about-panel").hide();
+                                                        $("#technical-panel").hide();
+                                                        $("#educationl").css("background-color", "white");
+                                                        $("#educationl").css("color", "#5DB158");
+                                                        
+                                                }, 
+                                                function(){
+                                                        $("#education-panel").hide();
+                                                        $("#educationl").css("background-color", "#5DB158");
+                                                        $("#educationl").css("color", "white");
+                                                        
+                                        });  
+                                        
+                                        $("#technicall").hover(
+
+                                                function(){
+                                                        $("#technical-panel").fadeIn("slow");
+                                                        $("#technicall").css("background-color", "white");
+                                                        $("#technicall").css("color", "#4C6E8D");
+                                                        
+                                                }, 
+                                                function(){
+                                                        $("#technical-panel").hide();
+                                                        $("#technicall").css("background-color", "#4C6E8D");
+                                                        $("#technicall").css("color", "white");
+
+                                                        
+                                        });   
+                                
+                                       
+                                }
+                        }
+
+                );  
+        </script>
+        
+    </head>
+    
+    <body>
+
+        <div class="container">
+            
+                        <div class="form-group"> &nbsp;</div>
+                    
+                        <div class="row" >
+                            
+                            
+                                <div class="col-sm-2" >
+                                        <center>
+                                                <h5 id="InformationC" class="mainMenu">Information</h5>
+                                        </center>          
+                                </div>
+                                
+                                <div class="col-sm-2">
+                                        <center>
+                                                <h5 id="ResumeC" class="mainMenu">Resume</h5>
+                                        </center>               
+                                </div>
+                            
+                                <div class="col-sm-2">
+                                        <center>
+                                                <h5 id="PortfolioC" class="mainMenu">Portfolio</h5>
+                                        </center>
+                                </div>
+                            
+                                <div class="form-group"> &nbsp;</div>    
+
+                        </div>
+           
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-6"><h1>Nicholas Seamans</h1></div>
+                                <div class="col-sm-4"><h3 style="color: #28ABE3; font-style: oblique;" class="typewriter">
+                                        <span style="color: #28ABE3">Full Stack Web Developer</span><span style="color: #1FDA9A">.</span>
+                                                                    </h3></div>
+                                <div class="col-sm-2"></div>
+                        </div>    
+                 <hr>       
+                        
+        </div>
+        
+        <div class="container" id="content">
+            
+                <!--  GENERAL INFORMATION-->
+                <!--                                       -->
+                <div class="container" id="Information" >
+ 
+                        <div class="row">
+                                    
+                                        <div class="col-sm-1"></div>
+                                        
+                                                <div class="col-sm-5">
+                                                            <h2 id="aboutl" style="background-color:#D86C6F; color: whitesmoke">&#x21E3; About.</h2>
+                                                </div>
+                                                        <div class="col-sm-6"></div>
+                                                </div>                
+
+                        <div id="about-panel" style="display: none;">
+                                                        <div class="row">
+                                                                <div class="col-sm-2"></div>
+                                                                <div class="col-sm-8">
+                                                                        <h5>Hello,</h5>
+                                                                        <p>
+                                                                                I am a professional developer with a passion for full-stack web development and business analytics. 
+                                                                                My skill-set includes web technologies, object oriented programming, database administration, and office productivity software
+                                                                                such as Access and Excel. I believe in having knowledge across the domain you work in. This portfolio is designed to represent 
+                                                                                my philosophy for web development.
+                                                                        </p>
+                                                                        <h6>Sincerely, </h6>
+                                                                        <h3><span style="font-family: 'Rouge Script', cursive;">Nicholas Seamans</span></h3>
+                                                                </div>
+                                                                <div class="col-sm-2 "></div>
+                                                        </div>
+                                                </div>
+
+                        <div class="row">
+                                                        <div class="col-sm-1"></div>
+                                                        <div class="col-sm-5">
+                                                            <h2 id="technicall" style="background-color:#4C6E8D; color: whitesmoke">&#x21E3; Technical.</h2>
+                                                        </div>
+                                                        <div class="col-sm-6"></div>
+                                                </div>
+
+                        <div id="technical-panel" style="display: none;">                        
+                                                        <div class="form-group">
+                                                                &nbsp;
+                                                        </div>
+
+                                                        <div class="row">
+                                                                <div class="col-sm-2"></div>
+
+                                                                    <div class="col-sm-8">                           
+                                                                            <ul class="list-group">
+                                                                                    <li class="list-group-item">Languages: JavaScript, PHP, CSS3, HTML5, JavaScript, C#</li>
+                                                                                    <li class="list-group-item">Frameworks: Vue.js, Adonis.js, Angular.js (pre version 2), Bootstrap, Node.js, JQuery</li>
+                                                                                    <li class="list-group-item">Content Management Systems: WordPress</li>
+                                                                                    <li class="list-group-item">Database: SQL Server, Oracle, MySQL</li>
+                                                                            </ul>
+                                                                    </div>
+                                                                    <div class="col-sm-2"></div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                                &nbsp;
+                                                        </div>
+
+                                                </div>
+
+                        <div class="row">
+                                                        <div class="col-sm-1"></div>
+                                                        <div class="col-sm-5">
+                                                        <h2 id="educationl" style="background-color:#5DB158; color: whitesmoke">&#x21E3; Education.</h2>
+                                                        </div>
+                                                        <div class="col-sm-6 "></div>
+                                                </div>
+
+                        <div id="education-panel" style="display: none;">
+
+                                                        <div class="col-md-12" style="height:25px;"></div>
+
+                                                        <!--  RADFORD UNIVERSITY Description-->
+                                                        <div class="Radford">
+                                                                <div class="row">
+                                                                        <div class="col-sm-2"></div>
+                                                                        <div class="col-sm-3"><h4 style="color: #28ABE3">Radford University</h4></div>
+                                                                        <div class="col-sm-5"><P>(2013 - 2017) Radford Virginia </p></div>                                           
+                                                                        <div class="col-sm-2"></div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div class="col-sm-2"></div>
+                                                                        <div class="col-sm-5">
+                                                                                <h6>Information Systems and Web Development</h6>
+                                                                                <p>Upsilon Pi Epsilon Honors Society for Computing and Information Technology</p>
+                                                                        </div>
+                                                                        <div class="col-sm-5"></div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div class="col-md-12" style="height:15px;"></div> 
+                                                                </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+                                                                <div class="col-md-12" style="height:15px;"></div> 
+                                                        </div>
+
+                                                        <!--  VIRGINIA WESTERN Description-->
+                                                        <div class="VWCC" >
+                                                                <div class="row">
+                                                                        <div class="col-sm-2"></div>
+                                                                        <div class="col-sm-3">
+                                                                                <h4 style="color: #28ABE3">Virginia Western Community College</h4>
+                                                                        </div>
+                                                                        <div class="col-sm-5"> <P>(2010 - 2012) Roanoke Virginia</p></div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div class="col-sm-2"></div>
+                                                                        <div class="col-sm-5">
+                                                                                <h6>Network and Database Administration</h6>
+                                                                                <p>Phi Theta Kappa Honor Society </p>
+                                                                        </div>
+                                                                        <div class="col-sm-5"></div>
+
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-md-12" style="height:15px;"></div> 
+                                                                </div>
+
+                                                        </div>
+
+                                                </div>  
+
+                        <div class="row">
+                                                        <div class="col-sm-1"></div>
+                                                        <div class="col-sm-5">
+                                                            <h2 id="contactl" style="background-color:#DAAD6D; color: whitesmoke">- Contact.</h2>
+                                                        </div>
+                                                        <div class="col-sm-6"></div>
+
+                                                </div>
+
+                        <div id="contact-panel">
+                                                        <div class="row">
+                                                                <div class="col-sm-2"></div>
+                                                                        <div class="col-sm-8">
+                                                                            
+                                                                                <h6>Phone: 1-(540)-320-7082</h6>
+                                                                                <h6>Email: nseamans@radford.edu</h6>
+                                                                                
+                                                                                
+                                                                                <img src="img/git.svg" alt="Me"  align="left" height="35" width="35"> 
+                                                                                <img src="img/link.svg" alt="Me"  align="left" height="35" width="35">        
+                                                                                
+                                                                        </div>
+                                                                <div class="col-sm-2"></div>                                           
+                                                        </div>                           
+                                                </div>
+
+                </div>
+                                                                        
+                <!--  RESUME                        -->
+                <!--                                       -->
+                <div class="container" id="Resume" style="display: none;">
+                    
+                        <div class="row">
+                                <div class="col-sm-4">
+                                        <h2>Web Development:</h2>
+                                </div> 
+                            
+                                <div class="col-sm-8">
+                                        <h6><a href="docs/NSResume.pdf">PDF</a></h6>
+                                        <h6><a href="docs/NSResume.docx">Word</a></h6>
+                                </div> 
+                        </div>  
+                    
+                        <!--  Display                        -->
+                        <div class="container">
+            
+                                <div class="row">
+                                        <div class="col-sm-3">
+                                                <h4>Introduction</h4>
+                                        </div>
+                                        <div class="col-sm-9"></div>
+                                </div>
+
+                            
+                                        <div id="Introduciton"  >
+
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                                <p>
+                                                                        Motivated recent university graduate passionate in software/full-stack web 
+                                                                        development and database administration        
+                                                                </p>
+                                                        </div>           
+                                                </div>
+
+                                                <div class="row">
+
+                                                        <div class="col-sm-1"></div>
+
+                                                        <div class="col-sm-10">
+
+                                                                <p>
+                                                                        Result oriented developer with experience working in team-based projects 
+                                                                        based on software design concepts such as the agile software development 
+                                                                        methodology.
+                                                                </p>
+                                                        </div>
+
+                                                        <div class="col-sm-1"></div>
+                                                </div>
+
+                                                <div class="row">
+                                                        <div class="col-sm-1"></div>
+
+                                                        <div class="col-sm-10">
+                                                            <p>Proficient learner exposed to computer science concepts such as object-oriented 
+                                                                programming. Also trained with integrating several languages, frameworks, and API’s 
+                                                                into one project.</p>
+                                                        </div>
+
+                                                        <div class="col-sm-1"></div>
+                                                </div>
+
+                                                <div class="row">
+                                                        <div class="col-sm-1"></div>
+
+                                                        <div class="col-sm-10">
+                                                            <p>Well-rounded in many computing concepts including software testing, 
+                                                                cyber security, networking, and database development.</p>
+                                                        </div>
+
+                                                        <div class="col-sm-1"></div>
+
+                                                </div>
+
+                                        </div>    
+                                    
+
+                                <div class="row">
+                                                <div class="col-sm-3">
+                                                        <h4>Technical Knowledge</h4>
+                                                </div>
+                                                <div class="col-sm-9"></div>
+                                </div>
+
+                                <div class="row">
+                                                <div class="col-sm-2"></div>
+
+                                                <div class="col-sm-8">
+
+                                                        <ul class="list-group">
+
+                                                                <li class="list-group-item">
+                                                                        <p>Programming Languages: Java, C#</p> 
+                                                                </li>
+
+                                                                <li class="list-group-item">
+                                                                        <p>Web Development Technologies: PHP, HTML, CSS 3, JavaScript, JSP, XML/XSD, JSON</p>                                                 
+                                                                </li>
+
+                                                                <li class="list-group-item">
+                                                                        <p>Frameworks and Libraries: JQuery, Bootstrap, JQuery, Angular.js, Vue.js, Junit / JWebunit</p>                                                 
+                                                                </li>
+
+                                                                <li class="list-group-item">
+                                                                        <p>Database languages and applications: MySQL, SQL Server, Oracle</p>                                                 
+                                                                </li>
+
+                                                        </ul>
+
+                                                </div>
+
+                                                <div class="col-sm-2"></div>
+                                </div>  
+
+                                <div class="row">
+                                                <div class="col-sm-3">
+                                                        <h4>Education</h4>
+                                                </div>
+                                                <div class="col-sm-9"></div>
+                                </div>
+
+                                <div class="row">
+                                                <div class="col-sm-6">
+
+                                                        <div class="row">
+
+                                                                <div class="col-sm-12">
+                                                                        <h5>Radford University, B.S in Information Systems</h5> 
+                                                                </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                                <div class="col-sm-2">
+                                                                        <h6> About. </h6>
+
+
+                                                                </div>
+
+
+
+                                                                <div class="col-sm-10">
+
+                                                                        <p> 
+                                                                                Emphasis on software design through MVC development model
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Created various applications with JavaScript frameworks, 
+                                                                                capstone project identified music based on musical key, 
+                                                                                and recommend other songs in complementing keys stored 
+                                                                                in a database 
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Strong foundation given in UI design principles through 
+                                                                                design theory and coursework 
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Courses and projects focused in cyber security and web 
+                                                                                security principles
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Several assignments completed dealing with integrating 
+                                                                                web services into applications
+                                                                        </p>
+
+                                                                </div>
+                                                        </div>    
+
+                                                </div>
+
+
+
+                                                <div class="col-sm-6">
+
+                                                        <div class="row">
+
+                                                                <div class="row">
+
+                                                                <div class="col-sm-12">
+                                                                    <h5>Virginia Western, A.A.S in Network and Database Administration</h5>
+                                                                </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                                <div class="col-sm-2">
+                                                                        <h6> About. </h6>
+
+
+                                                                </div>
+
+
+
+                                                                <div class="col-sm-10">
+
+                                                                        <p> 
+                                                                                Development of well-designed databases for both Oracle Database and Sequel Server
+                                                                        </p>
+
+                                                                        <p> 
+                                                                               Education in database practices such as stored procedures. 
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Hands on experience with administration of active directories including role-based security structures 
+                                                                        </p>
+
+                                                                        <p> 
+                                                                                Knowledge gained in implementation of operating systems such as Microsoft Windows, Microsoft Server, and Linux
+                                                                        </p>
+
+
+                                                                </div>
+                                                        </div> 
+
+                                                        </div>
+
+                                                </div>
+                                </div>
+
+                                <div class="row">
+                                                <div class="col-sm-3">
+                                                        <h4>Organizations</h4>
+                                                </div>
+                                                <div class="col-sm-9"></div>
+                                </div>
+
+                                <div class="row">
+                                                <div class="col-sm-2"></div>
+
+                                                <div class="col-sm-8">
+                                                        <h6>Upsilon Pi Epsilon Honors Society for Computing and Information Technology </h6>
+                                                        <h6>Phi Theta Kappa Honor Society </h6>
+                                                        <h6>Roanoke Valley .NET User Group (RVNUG) </h6>
+                                                </div>
+
+                                                <div class="col-sm-2"></div>
+                                </div>
+                        </div>
+                    
+                </div>
+                
+                <!--  Portfolio                        -->
+                <!--                                       -->
+                <div class="container" id="Portfolio" style="display: none;">
+                        <h1>DODO</h1>
+                </div>
+    
+        </div>
+                
+        
+    </body>
+    
+</html>
