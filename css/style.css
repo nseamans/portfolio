@@ -8,6 +8,7 @@
 .mainMenu:hover {
   color: white;
   opacity: 1;
+  cursor: pointer;
 }
 
 /* Portfolio Navigation Bar Text Animation */
