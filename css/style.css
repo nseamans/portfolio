@@ -1,0 +1,215 @@
+/* Navigation Bar Text Animation */
+.mainMenu {
+  opacity: 0.9;
+  color: white;
+  padding: 25px;
+}
+
+.mainMenu:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Portfolio Navigation Bar Text Animation */
+.subMenu {
+  color: black;  
+  opacity: 0.5;
+  background-color: fbfafa;
+
+}
+
+.subMenu:hover {
+  color: #d86c6f;
+  opacity: 1;
+}
+
+/* Continues content box to bottom of the screen */
+#content {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.technicalInfo {
+  color: #4c6e8d;
+}
+
+/* Introduction element animation */
+#introHead {
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  color: #4c6e8d;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#introLine {
+  color: #d86c6f;
+}
+
+/* Display animation for projects */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.imgWrap {
+  background-color: #fbfafa;
+  position: relative;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fbfafa;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 1s, visibility 1s;
+}
+
+.imgWrap:hover .imgDescription {
+  background-color: #fbfafa;
+  text-decoration: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#nameText{
+    color: white
+}
+
+#weText {
+  font-family: "Questrial", sans-serif;
+  color: #4c6e8d;
+  text-align: left;
+}
+
+#signature {
+  font-family: "Rouge Script", cursive;
+  color: #d86c6f;
+}
+
+#progressBar {
+  background-color: #4c6e8d;
+}
+
+#schoolHighlight {
+  color: #5db158;
+}
+
+#ResumeActivate {
+  color: #4c6e8d;
+}
+
+#aboutHead {
+  color: #659dbd;
+  text-align: center;
+}
+
+#followContent {
+  font-size: 90%;
+}
+
+#siteHead {
+  font-size: 120%;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+#sitelDis {
+  background: rgba(76, 110, 141, 0.01);
+  padding-bottom: 25px;
+}
+
+
+
+.resumeInfo{
+    font-size: 80%;
+}
+
+.projLink {
+  text-decoration: none;
+  font-size: 125%;
+  color: black;
+}
+
+.prjDisplay {
+  background-color: #fbfafa;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.projDesc {
+  font-size: 90%;
+}
+
+.webButton{
+    border-radius: 10px 5px 7px 5px; 
+}
+
+.musicImg{
+    max-height: 200px;
+    -webkit-filter: grayscale(50%); 
+    filter: grayscale(50%);
+}
+
+body{
+    background-color: #fbfafa;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+  color:#4C6E8D;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
+  color:#4C6E8D;
+}
+
+h4.nameText{
+    font-size: 200%;
+
+}
+
+p {
+  font-family: "Domine", serif;
+  color: ‎#A9A9A9;
+}
+
